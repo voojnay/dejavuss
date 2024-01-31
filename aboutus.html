@@ -38,6 +38,16 @@
   background-color: white;
   overflow: hidden;
 }
+     }
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
         </style>
     <body>
       <nav>
@@ -107,9 +117,12 @@
 <h2 style="color:Brown;">What is Deja Brew?</h2>
 
 <p style="color:Dark Green; text-align:center;  font-color:brown; font-size:120%;" id="demo">Click the button to know the answer!.</p>
-
-<button style="color:white;   margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%);  background-color: brown;  font-size:130%;" type="button" onclick='document.getElementById("demo").innerHTML = "Deja Vu!"'>Click Me!</button>
-<br>
+<div class="container">
+  <div class="center">
+<button style="color:white; background-color: brown;  font-size:130%;" type="button" onclick='document.getElementById("demo").innerHTML = "Deja Vu!"'>Click Me!</button>
+  </div>
+</div>
+        <br>
     <br>
         
 <table>
