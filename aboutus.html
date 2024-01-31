@@ -101,6 +101,10 @@
 <br>
 <p>We are dedicated to using the best ingredients, innovative flavors and captivating textures to ensure that every menu provided by Deja Brew is an unforgettable experience.</p>
 </div>
+        
+        <br>
+        <br>
+        
 <table>
     <tr>         
       <th><h3 style="text-align: center; font-size: 100%;">Business Hours</h3></th> 
@@ -138,7 +142,22 @@
     </body>
 <br>
 <br>
-    
+    <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
 <footer>
   <p>&copy; 2024 Copyright Reserved DejaBrew</p>
 </footer>
