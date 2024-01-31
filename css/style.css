@@ -1,0 +1,805 @@
+/*nadia navigation*/
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+nav img{
+  width: 50px;
+  position: absolute;
+  top: 17px;
+  left: 12%;
+  border-radius: 50%;
+}
+  nav{
+    height: 80px;
+    background: #4d2109;
+  }
+
+nav ul{
+float: right;
+margin-right: 25px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;}
+
+nav ul li a{
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 0;
+    text-transform: uppercase;
+}
+
+nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+
+nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+label #btn,
+label #cancel{
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+
+    display: none;
+}
+
+@media (max-width: 1118px){
+    nav img{
+        left: 8%;
+    }
+}
+
+@media (max-width: 944px){
+    nav img{
+        left: 6%;
+        top: 20px;
+        width: 50px;
+        
+    }
+    nav ul li a{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 860px){
+    label #btn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #6b3214;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+    #check:checked ~ label #cancel{
+        display: block;
+    }
+}
+
+ 
+ 
+ 
+ /*ANIS CONTACT US*/
+ 
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+ }
+ 
+ body 
+ {
+   min-height: 100vh;
+   width: 100%;
+   align-items: center;
+   background-color: #FFFAF0;
+   background-size: cover;
+ }
+ 
+ section 
+ {
+   padding-top: 50px;
+   padding-bottom: 50px;
+ }
+ 
+ .container 
+ {
+   max-width: 1080px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 20px;
+   padding-right: 20px;
+ }
+ 
+ .section-header
+  {
+   margin-bottom: 50px;
+   text-align: center;
+ }
+ 
+ .section-header h2 
+ {
+   color: #FFF;
+   font-weight: bold;
+   font-size: 3em;
+   margin-bottom: 20px;
+ }
+ 
+ .section-header p 
+ {
+   color: #FFF;
+ }
+ 
+ .row 
+  {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+ }
+ 
+ .contact-info 
+ {
+   width: 50%;
+ }
+ 
+ .contact-info-item 
+ {
+   display: flex;
+   margin-bottom: 30px;
+ }
+ 
+ .contact-info-icon
+  {
+   height: 70px;
+   width: 80px;
+   background-color: #fff;
+   text-align: center;
+   border-radius: 50%;
+ }
+ 
+ .contact-info-icon i 
+ {
+   font-size: 30px;
+   line-height: 70px;
+ }
+ 
+ .contact-info-content 
+ {
+   margin-left: 15px;
+ }
+ 
+ .contact-info-content h4 {
+   color: #ee8b3b;
+   font-size: 1.4em;
+   margin-bottom: 5px;
+ }
+ 
+ .contact-info-content p {
+   color: #FFF;
+   font-size: 1em;
+ }
+ 
+ .contact-form {
+   background-color: #fff;
+   padding: 40px;
+   width: 45%;
+   padding-bottom: 20px;
+   padding-top: 20px;
+ }
+ 
+ .contact-form h2 {
+   font-weight: bold;
+   font-size: 2em;
+   margin-bottom: 10px;
+   color: #333;
+ }
+ 
+ .contact-form .input-box {
+   position: relative;
+   width: 100%;
+   margin-top: 10px;
+ }
+ 
+ .contact-form .input-box input,
+ .contact-form .input-box textarea{
+   width: 100%;
+   padding: 5px 0;
+   font-size: 16px;
+   margin: 10px 0;
+   border: none;
+   border-bottom: 2px solid #333;
+   outline: none;
+   resize: none;
+ }
+ 
+ .contact-form .input-box span {
+   position: absolute;
+   left: 0;
+   padding: 5px 0;
+   font-size: 16px;
+   margin: 10px 0;
+   pointer-events: none;
+   transition: 0.5s;
+   color: #666;
+ }
+ 
+ .contact-form .input-box input:focus ~ span,
+ .contact-form .input-box textarea:focus ~ span{
+   color:brown;
+   font-size: 12px;
+   transform: translateY(-20px);
+ }
+ 
+ .contact-form .input-box input[type="submit"]
+ {
+   width: 100%;
+   background: #d45f00a8;
+   color: #FFF;
+   border: none;
+   cursor: pointer;
+   padding: 10px;
+   font-size: 18px;
+   border: 1px solid #d45f00a8;
+   transition: 0.5s;
+ }
+ 
+ .contact-form .input-box input[type="submit"]:hover
+ {
+   background: #FFF;
+   color: #d45f00a8;
+ }
+ 
+ @media (max-width: 991px) {
+   section {
+     padding-top: 50px;
+     padding-bottom: 50px;
+   }
+   
+   .row {
+     flex-direction: column;
+   }
+   
+   .contact-info {
+     margin-bottom: 40px;
+     width: 100%;
+   }
+   
+   .contact-form {
+     width: 100%;
+   }
+ }
+ 
+ 
+
+  
+/*NADIA ORGANIZATION CHART*/
+
+ *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  }
+  
+  body {
+  height: 100vh;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+  position: relative;
+  }
+  
+  .tree{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  }
+  
+  .tree ul{
+  padding-top: 20px;
+  position: relative;
+  transition: .5s;
+  }
+  
+  .tree li{
+  display: inline-table;
+  text-align: center;
+  list-style-type: none;
+  position: relative;
+  padding: 10px;
+  transition: .5s;
+  }
+  
+  .tree li:before, .tree li:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 50%;
+  border-top: 1px solid #ccc;
+  width: 51%;
+  height: 10px;
+  }
+  
+  .tree li:after
+  {
+  right: auto;
+  Left: 50%;
+  border-left: 1px solid #ccc;
+  }
+  .tree li:only-child:after, .tree li:only-child:before{
+   display: none;
+   }
+   
+   .tree li:only-child{
+   padding-top: 0;
+   }
+   
+   .tree li:first-child:before, .tree li:last-child:after{
+   border: none;
+   }
+   
+   .tree li:last-child:before{
+   border-right: 1px solid #ccc; border-radius: 0px 5px 0px 0px;
+   }
+   
+   .tree li:first-child:after{
+   border-radius: 5px 0px 0px 0px;
+   }
+ 
+   .tree ul ul:before {
+     content: '';
+     position: absolute;
+     top: 0;
+     Left: 50%;
+     border-Left: 1px solid #ccc;
+     width: 0;
+     height: 20px;
+     }
+     
+     .tree a{
+     border: 1px solid #ccc;
+     padding: 10px;
+     display: inline-grid;
+     border-radius: 5px;
+     text-decoration-Line: none;
+     border-radius: 5px;
+     transition: .5s;
+     }
+     .tree a img {
+       width: 50px;
+       height: 50px;
+       margin-bottom: 10px ! important;
+       border-radius: 100px;
+       margin: auto;
+       object-fit: cover;
+       }
+       
+       .tree a span {
+       border: 1px solid #ccc;
+       border-radius: 5px;
+       color: #666;
+       padding: 8px;
+       font-size: 12px;
+       text-transform: uppercase;
+       letter-spacing: 1px;
+       font-weight: 500;
+       }
+
+ /*Hover-Section*/
+ 
+ .tree li a:hover, .tree li a:hover img, .tree li a:hover span, .tree li a:hover+ul li a
+ {
+ background: #d9e9d0;
+ color: #000;
+ border:1px solid #839977;
+ box-shadow: 0px 0px 8px -5px #474646;
+ }
+ 
+ .tree li a:hover+ul li:after, .tree li a:hover+ul li:before, .tree li a:hover+ul:before, .tree li a:hover+ul ul:before
+ { 
+ border-color: #c1dfb1;
+ }
+ 
+ 
+ 
+ 
+ 
+   /* Style the footer */
+ 
+   html {
+     margin: 0;
+     padding: 0;
+     height: 100%;
+ }
+ 
+ #container {
+     width: 674px;
+     min-height: 100%;
+     height: 100%;
+     position: relative;
+     margin: 0 auto;
+ }
+ 
+ #body {
+     width: 616px;
+     padding: 5px 14px 5px 14px;
+     margin: 0 auto;
+     padding-bottom: 20px;
+ }
+   footer {
+     bottom: 0;
+     margin: 0 auto;
+     background-color: #4d2109;
+     padding: 25px;
+     text-align: center;
+     color: floralwhite;
+     font-size: 20px;
+   }
+ 
+  
+
+
+
+/*NADIA HOMEPAGE*/
+body{
+background-color: floralwhite;
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+   
+section 
+{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+
+    .content{
+        text-align: center;
+    }
+
+    .content h1{
+        font-size: 100px;
+        margin-left: 60%;
+        text-align: left;
+        color: #fff;
+        font-weight: 600;
+        transition: 0.5s;
+    }
+
+    .content h1:hover{
+        -webkit-text-stroke: 2px #fff;
+        color: transparent;
+    }
+
+    .content a{
+        margin-left: 50%;
+        text-align: left;
+        text-decoration: none;
+        display: inline-block;
+        color: #fff;
+        font-size: 24px;
+        border: 2px solid #fff;
+        padding: 14px 70px;
+        border-radius: 50px;
+    }
+
+    .content a:hover{
+        background-color: #fff;
+        color: #000;
+    }
+
+    .back-video{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        
+    }
+
+    @media (min-aspect-ratio: 16/9){
+        .back-video{
+            width: 100%;
+            height: auto;
+        }
+    }
+    @media (max-aspect-ratio: 16/9){
+            .back-video{
+            width: auto;
+            height: 100%;
+        }
+    }
+
+
+    .logoimage img{
+        max-width: 35%;
+        height:auto;
+        border-radius: 50%;
+        float: left;
+
+    }
+    
+
+
+/*ANIS NABILAH ABOUT US*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  body{
+      background-color: #FFFAF0;
+  }
+  .heading{
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      margin: 20px auto;
+  }
+  .heading h1{
+      font-size: 50px;
+      color: #4f1a05;
+      margin-bottom: 25px;
+      position: relative;
+  }
+  .heading h1::after{
+      content:"";
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      display: block;
+      margin:0 auto;
+      background-color: #4f27004a;
+  }
+  .heading p{
+      font-size: 25px;
+      color: #481c06;
+      margin-bottom: 35px;
+  }
+  .container{
+      width: 90%;
+      margin: 0 auto;
+      padding: 10px 20px;
+  }
+  .about{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+  .about-image{
+      flex: 1;
+      margin-right: 40px;
+      overflow:hidden;
+  }
+  .about-image img{
+      max-width: 100%;
+      height:auto;
+      display: block;
+      transition: 0.5s ease;
+  }
+  .about-image:hover img{
+      transform: scale(1.2);
+  }
+  .about-content{
+      flex: 1;
+  }
+  .about-content h2{
+      FONT-SIZE:23PX;
+      MARGIN-BOTTOM: 15PX;
+      COLOR: #632c0f;
+  }
+  .about-content p{
+      font-size: 18px;
+      line-height: 1.5;
+      color:#f1ece6;
+  }
+  .about-content ul{
+    font-size: 18px;
+      line-height: 1.5;
+      color:#f1ece6;
+  }
+
+
+
+
+
+/*NAYLI MENU*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.7rem;
+    font-family: 'Avenir Next LT Pro Condensed', sans-serif;
+
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 4rem;
+}
+
+.all-products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product{
+    overflow: hidden;
+    text-align: center;
+    width: 240px;
+    height: 500px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 2px solid crimson;
+    border-radius: 15px;
+    margin: 2rem;
+    ;
+}
+
+.product:hover img{
+    scale: 1.1;
+}
+
+.product:hover {
+    box-shadow: 5px 15px 25px #eeeeee;
+}
+
+.product img {
+    height: 200px;
+    margin: 1rem;
+    transition: all 0.3s;
+}
+
+.product a:link, .product a:visited {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1.2rem 3rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    transition: all 0.2s;
+}
+
+.product a:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+/*WAHEEDA PROMOTION*/
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.desc{
+    color: #4e3100;
+    line-height: 1.5;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+
+
+
+  /* TABLE */                  
+  table, td, tr, th 
+  {border: 1px solid rgb(41, 21, 0); 
+  border-collapse: collapse; 
+  padding: 20px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  
+  } 
+  th 
+  { 
+  padding: 10px; 
+  background-color: rgb(99, 50, 20); 
+  margin: 100px;
+  color: white;
+  font-size: 21px;
+  } 
+  td 
+  { 
+  text-align: center;
+  font-size: 18px;
+  } 
+  
+  
+
+
+ 
+ 
+ 
